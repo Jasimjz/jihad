@@ -10,9 +10,9 @@ ${petik}┃ ⬡ WIB : ${Wib}
 ┏━━⬣ *TODAY*
 ┃
 ${petik}┃ ⬡ ${ucapannya}
-┃ ⬡ Jam : ${Wib}
-┃ ⬡ Hari : ${hari}
-┃ ⬡ Tanggal : ${tampilTanggall}${petik}
+┃ ⬡ Time : ${Wib}
+┃ ⬡ Day : ${hari}
+┃ ⬡ Date : ${tampilTanggall}${petik}
 ┗⬣
 
 ╭──「 📖  *Command* 」
@@ -40,7 +40,7 @@ ${petik}│ ⤷ ${prefix}setprefix <query>
 │ ⤷ ${prefix}self 
 │ ⤷ ${prefix}public 
 │ ⤷ ${prefix}off <query>
-│ ⤷ ${prefix}on [alasan]
+│ ⤷ ${prefix}on [reason]
 │ ⤷ ${prefix}status 
 │ ⤷ ${prefix}antibug <on/off>
 │ ⤷ ${prefix}antitag <on/off>
@@ -59,7 +59,7 @@ ${petik}│ ⤷ ${prefix}antilink <1/0>
 │ ⤷ ${prefix}revoke 
 │ ⤷ ${prefix}linkgc 
 │ ⤷ ${prefix}group <open/close>
-│ ⤷ ${prefix}add <62xxxx>
+│ ⤷ ${prefix}add <91xxxx>
 │ ⤷ ${prefix}kick <reply>
 │ ⤷ ${prefix}sider <reply>
 │ ⤷ ${prefix}promote <reply>
@@ -101,7 +101,7 @@ ${petik}│ ⤷ ${prefix}tictactoe <@tag>
 ${petik}│ ⤷ ${prefix}hbd <date>
 │ ⤷ ${prefix}slander <query>
 │ ⤷ ${prefix}slanderpm <query>
-│ ⤷ ${prefix}kontak <62xxxx>
+│ ⤷ ${prefix}kontak <91xxxx>
 │ ⤷ ${prefix}styletext <query>
 │ ⤷ ${prefix}photoxy <query>${petik}
 │
