@@ -50,7 +50,7 @@ alpha.on('group-participants-update', async (anu) => {
 		try {
 		const mdata = await alpha.groupMetadata(anu.jid)
 		console.log(anu)
-		const jamnyy = moment.tz('Asia/Jakarta').format('HH:mm')
+		const jamnyy = moment.tz('Asia/Kolkata').format('HH:mm')
 		const groupMet = await alpha.groupMetadata(anu.jid);
         const groupMembers = groupMet.participants;
         const groupAdmins = getGroupAdmins(groupMembers);
@@ -68,7 +68,7 @@ alpha.on('group-participants-update', async (anu) => {
         pp_user =
           "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60";
       }
-        teks = `Welcome @${num.split('@')[0]} ${enter}${enter}• Name : _${anu_user}_${enter}• Bio : _${p3}_${enter}• Number : _@${num.split('@')[0]}_${enter}• Member : _${memeg}_${enter}• Join : _${jamnyy} Indonesian time_${enter}${enter}\`\`\`Hope you like it and don't forget to read the group description\`\`\``;
+        teks = `Welcome @${num.split('@')[0]} ${enter}${enter}• Name : _${anu_user}_${enter}• Bio : _${p3}_${enter}• Number : _@${num.split('@')[0]}_${enter}• Member : _${memeg}_${enter}• Join : _${jamnyy} Indian time_${enter}${enter}\`\`\`Hope you like it and don't forget to read the group description\`\`\``;
         buff = await getBuffer(pp_user)
          buttons = [
           { buttonId: `hmm`, buttonText: { displayText: "Welcome👋" }, type: 1 }
@@ -101,7 +101,7 @@ alpha.on('group-participants-update', async (anu) => {
         pp_user =
           "https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png?q=60";
       }
-        out = `◪ Goodbye @${num.split('@')[0]}${enter}◪ Leave from group:${enter}${mdata.subject}${enter}│${enter}└─ ❏ Nomor: ${num.replace('@s.whatsapp.net', '')}${enter}GoodBye~~`;
+        out = `◪ Goodbye @${num.split('@')[0]}${enter}◪ Leave from group:${enter}${mdata.subject}${enter}│${enter}└─ ❏ Number: ${num.replace('@s.whatsapp.net', '')}${enter}GoodBye~~`;
         buff = await getBuffer(pp_user);
           buttons = [
           { buttonId: `y`, buttonText: { displayText: "Goodbye 👋" }, type: 1 },
@@ -127,46 +127,46 @@ alpha.on('group-participants-update', async (anu) => {
       } else if (anu.action == 'promote') {
       	falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
 		remoteJid: "0@s.whatsapp.net"},
-message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us",
-"inviteCode": "mememteeeekkeke","groupName": "Alphabot", 
+message: {"groupInviteMessage": {"groupJid": "917736703116-1623928322@g.us",
+"inviteCode": "mememteeeekkeke","groupName": "Premium", 
 "caption": `Made With ❣️`, 'jpegThumbnail': fs.readFileSync(`./image/${setting.thumbnail}`)}}}
          
 			const mdata = await alpha.groupMetadata(anu.jid)
 			numm = anu.participants[0]
 			teks = `🚀 *PROMOTE DETECTED*
 			
-\`\`\`Nomor :\`\`\` ${num.replace('@s.whatsapp.net', '')}
+\`\`\`Number :\`\`\` ${num.replace('@s.whatsapp.net', '')}
 \`\`\`User :\`\`\` @${num.split('@')[0]}
 \`\`\`Group :\`\`\` ${mdata.subject}
 
-_Selamat jabatan kamu naik_`
+_Congratulations on your promotion_`
 			try {
 				ppimg = await alpha.getProfilePicture(numm)
 			} catch {
-				ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+				ppimg = 'https://i.imgur.com/HcvTgAt.png'
 			}
 			let buff = await getBuffer(ppimg)
 				alpha.sendMessage(mdata.id, buff, MessageType.image, {thumbnail: Buffer.alloc(0), quoted : falfa, caption: teks, contextInfo: { "mentionedJid" : [num], "forwardingScore":999,"isForwarded":true},sendEphemeral: true })
 		 } else if (anu.action == 'demote') {
 			falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
 		remoteJid: "0@s.whatsapp.net"},
-message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us",
-"inviteCode": "mememteeeekkeke","groupName": "Alphabot", 
+message: {"groupInviteMessage": {"groupJid": "917736703116-1623928322@g.us",
+"inviteCode": "mememteeeekkeke","groupName": "Premium", 
 "caption": `Made With ❣️`, 'jpegThumbnail': fs.readFileSync(`./image/${setting.thumbnail}`)}}}
          
 			numm = anu.participants[0]
 			const mdata = await alpha.groupMetadata(anu.jid)
 			teks = `😒 *DEMOTE DETECTED*
 			
-\`\`\`Nomor :\`\`\` ${num.replace('@s.whatsapp.net', '')}
+\`\`\`Number :\`\`\` ${num.replace('@s.whatsapp.net', '')}
 \`\`\`User :\`\`\` @${num.split('@')[0]}
 \`\`\`Group :\`\`\` ${mdata.subject}
 
-_Kasian malah kena demote_`
+_Too bad it got demoted_`
 			try {
 				ppimg = await alpha.getProfilePicture(numm)
 			} catch {
-				ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+				ppimg = 'https://i.imgur.com/HcvTgAt.png'
 			}
 			let buff = await getBuffer(ppimg)
 				alpha.sendMessage(mdata.id, buff, MessageType.image, {quoted : falfa, caption: teks, contextInfo: { "mentionedJid" : [num], "forwardingScore":999,"isForwarded":true},sendEphemeral: true })
@@ -179,37 +179,37 @@ _Kasian malah kena demote_`
 /*alpha.on('chat-update', async (anu) => {
 	console.log(anu)
         falfa = { key: {fromMe: false,participant: "0@s.whatsapp.net",
-remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "6288213840883-1616169743@g.us","inviteCode": "mememteeeekkeke","groupName": "Alphabot", "caption": `Made With ❤️`, 'jpegThumbnail': `./image/${setting.thumbnail}`}}}
+remoteJid: "0@s.whatsapp.net"},message: {"groupInviteMessage": {"groupJid": "917736703116-1623928322@g.us","inviteCode": "mememteeeekkeke","groupName": "Premium", "caption": `Made With ❤️`, 'jpegThumbnail': `./image/${setting.thumbnail}`}}}
   metdata = await alpha.groupMetadata(anu.jid)
   try {
 					ppimg = await alpha.getProfilePicture(anu.jid)
 				} catch {
-					ppimg = 'https://i.ibb.co/rvsVF3r/5012fbb87660.png'
+					ppimg = '917736703116-1623928322@g.us'
 				}
 			let buff = await getBuffer(ppimg)
     if(anu.announce == 'false'){
-    teks = `- [ *Group Opened* ] - \n\n_Group telah dibuka oleh admin_\n_Sekarang semua member bisa mengirim pesan_`
+    teks = `- [ *Group Opened* ] - \n\n_Group has been opened by admin_\n_Ellarum Vann Polikam Baa_`
     alpha.sendMessage(metdata.id, buff, MessageType.image, {thumbnail: Buffer.alloc(0), caption: teks,contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true  , quoted: falfa})
     console.log(clc.magenta(wibb), clc.yellow(`[ Group Opened ] In ${metdata.subject}`))
   }
   else if(anu.announce == 'true'){
-    teks = `- [ *Group Closed* ] - \n\n_Group telah ditutup oleh admin_\n_Sekarang hanya admin yang dapat mengirim pesan_`
+    teks = `- [ *Group Closed* ] - \n\n_Group has been closed by admin_\n_Group Ill Inni Admins Mathram Chat Cheyam_`
     alpha.sendMessage(metdata.id, buff, MessageType.image, {thumbnail: Buffer.alloc(0), caption: teks,contextInfo: {"forwardingScore":999,"isForwarded":true},sendEphemeral: true  , quoted: falfa})
     console.log(clc.magenta(wibb), clc.yellow(`[ Group Closed ] In ${metdata.subject}`))
   }
   else if(!anu.desc == ''){
     tag = anu.descOwner.split('@')[0] + '@s.whatsapp.net'
-    teks = `- [ *Group Description Change* ] - \n\nDeskripsi Group telah diubah oleh Admin @${anu.descOwner.split('@')[0]}\n• Deskripsi Baru : \n${anu.desc}`
+    teks = `- [ *Group Description Change* ] - \n\nAdmin Group Discription Change Akki@${anu.descOwner.split('@')[0]}\n• Description Changed : \n${anu.desc}`
     alpha.sendMessage(metdata.id, buff, MessageType.image, {thumbnail: Buffer.alloc(0), caption: teks,contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true  , quoted: falfa})
     console.log(clc.magenta(wibb),clc.yellow(`[ Group Description Change ] In ${metdata.subject}`))
   }
   else if(anu.restrict == 'false'){
-    teks = `- [ *Group Setting Change* ] - \n\nEdit Group info telah dibuka untuk member\nSekarang semua member dapat mengedit info Group Ini`
+    teks = `- [ *Group Setting Change* ] - \nEdit Group info has been opened for members\nNow all members can edit this group info`
     alpha.sendMessage(metdata.id, buff, MessageType.image, {thumbnail: Buffer.alloc(0), caption: teks,contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true  , quoted: falfa})
     console.log(clc.magenta(wibb),clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
   }
   else if(anu.restrict == 'true'){
-    teks = `- [ *Group Setting Change* ] - \n\nEdit Group info telah ditutup untuk member\nSekarang hanya admin group yang dapat mengedit info Group Ini`
+    teks = `- [ *Group Setting Change* ] - \n\nEdit Group info has been closed for members\nNow only group admin can edit this group info`
     alpha.sendMessage(metdata.id, buff, MessageType.image, {thumbnail: Buffer.alloc(0), caption: teks,contextInfo:{"forwardingScore":999,"isForwarded":true},sendEphemeral: true  , quoted: falfa})
     console.log(clc.magenta(wibb), clc.yellow(`[ Group Setting Change ] In ${metdata.subject}`))
   }
@@ -221,7 +221,7 @@ if (m.key.remoteJid == 'status@broadcast') return
 if (!m.key.fromMe && m.key.fromMe) return
 if (antidel === false) return
 m.message = (Object.keys(m.message)[0] === 'ephemeralMessage') ? m.message.ephemeralMessage.message : m.message
-const jam = moment.tz('Asia/Jakarta').format('HH:mm:ss')
+const jam = moment.tz('Asia/Kolkata').format('HH:mm:ss')
 let d = new Date
 let locale = 'id'
 let gmt = new Date(0).getTime() - new Date('1 Januari 2021').getTime()
@@ -234,8 +234,8 @@ year: 'numeric'
 })
 const type = Object.keys(m.message)[0]
 alpha.sendMessage(m.key.remoteJid, ` *A N T I  D E L E T E*
- ‘Nama : @${m.participant.split("@")[0]}
- ‘Waktu : ${jam} ${week} ${calender}
+ ‘Name : @${m.participant.split("@")[0]}
+ ‘Time : ${jam} ${week} ${calender}
  ‘Type : ${type}`, MessageType.text, {quoted: m.message, contextInfo: {"mentionedJid": [m.participant]}})
 
 alpha.copyNForward(m.key.remoteJid, m.message)
