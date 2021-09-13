@@ -1,4 +1,4 @@
-# ```SELF-BOT```
+# ```PREMIUM-BOT```
 <p align="center">
 <a href="https://github.com/J-I-H-A-D/followers"><img title="Followers" src="https://img.shields.io/github/followers/J-I-H-A-D?color=red&style=flat-square"></a>
 <a href="https://github.com/J-I-H-A-D/private/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/J-I-H-A-D/private?color=blue&style=flat-square"></a>
