@@ -1,8 +1,8 @@
 # ```SELF-BOT```
 <p align="center">
-<a href="https://github.com/zeeoneofc/followers"><img title="Followers" src="https://img.shields.io/github/followers/zeeoneofc?color=red&style=flat-square"></a>
-<a href="https://github.com/zeeoneofc/Self-bot-wa/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/zeeoneofc/Self-bot-wa?color=blue&style=flat-square"></a>
-<a href="https://github.com/zeeoneofc/Self-bot-wa/network/members"><img title="Forks" src="https://img.shields.io/github/forks/zeeoneofc/Self-bot-wa?color=red&style=flat-square"></a>
+<a href="https://github.com/J-I-H-A-D/followers"><img title="Followers" src="https://img.shields.io/github/followers/J-I-H-A-D?color=red&style=flat-square"></a>
+<a href="https://github.com/J-I-H-A-D/private/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/J-I-H-A-D/private?color=blue&style=flat-square"></a>
+<a href="https://github.com/J-I-H-A-D/private/network/members"><img title="Forks" src="https://img.shields.io/github/forks/J-I-H-A-D/private?color=red&style=flat-square"></a>
 <a href="https://github.com/zeeoneofc/Self-bot-wa/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/zeeoneofc/Self-bot-wa?label=Watchers&color=blue&style=flat-square"></a>
 <a href="https://github.com/zeeoneofc/Self-bot-wa"><img title="Open Source" src="https://badges.frapsoft.com/os/v2/open-source.svg?v=103"></a>
 <a href="https://github.com/zeeoneofc/Self-bot-wa/"><img title="Size" src="https://img.shields.io/github/repo-size/zeeoneofc/Self-bot-wa?style=flat-square&color=green"></a>
