@@ -28,16 +28,12 @@ Terus scan...
 
 ## ```How to Deploy```
 
-[`Click Here For Tutorial`](https://youtu.be/)<br>
 
 ----------
 
-<p align="center">
-  <a href="https://youtu.be/_CP2_1Yqauo"><img src="https://a.top4top.io/p_2081imvxm1.jpg" />
-</p>
 
 
 ## ```Coffee```
 
-- [`SAWERIA`](https://saweria.co/zeeoneofc)
+
 
